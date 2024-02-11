@@ -19,16 +19,16 @@ q = design discharge from a pipe(m/day)
 ''')
 
 print("\n\n\n")
-D = input("Enter depth(m) of impervious layer form  drainbase: ")
-r = input("Enter the radius of the drain pipe: ")
+D = float(input("Enter depth(m) of impervious layer from  drainbase: "))
+r = float(input("Enter the radius of the drain pipe: "))
 u=r*math.pi
-k1 = input("Enter hydraulic conductivity(m/day) of soil above drain base: ")
-k2 = input("Enter hydraulic conductivity(m/day) of soil below drain base: ")
-h = input("Enter height of water table from drain base: ")
-q = input("Enter discharge(m/day) through the pipe: ")
+k1 = float(input("Enter hydraulic conductivity(m/day) of soil above drain base: "))
+k2 = float(input("Enter hydraulic conductivity(m/day) of soil below drain base: "))
+h = float(input("Enter height of water table from drain base: "))
+q = float(input("Enter discharge(m/day) through the pipe: "))
 
 while(True):
-    L = input("Enter length spacing(m) to start with: ")
+    L = float(input("Enter length spacing(m) to start with: "))
     L2=0
     d=0
     if(D>L/4):
